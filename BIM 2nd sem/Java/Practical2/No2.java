@@ -7,6 +7,7 @@ public class No2 {
         System.out.println("Enter a four digit number");
         int num = input.nextInt();
         int i = 1000, sum = 0, sum2 = 0, rev = 0, cpy = num;
+        System.out.println("Individual digits separately: ");
         while (num != 0) {
             int quo = num / i;
             int rem = cpy % 10;
