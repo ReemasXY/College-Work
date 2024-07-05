@@ -4,7 +4,7 @@ public class No18 {
             if (i == 25 || i == 40 || i == 90) {
                 continue;
             } else {
-                System.out.println(i);
+                System.out.print(" "+i);
             }
         }
     }

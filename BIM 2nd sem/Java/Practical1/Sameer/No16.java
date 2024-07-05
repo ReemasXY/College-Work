@@ -20,7 +20,7 @@ public class No16 {
                         System.out.println("Fees of BIM is 320000");
                         break;
                     case 3:
-                        System.out.println("Fees of BBA is 330000");
+                        System.out.println("Fees of BBA is 340000");
                         break;
                     default:
                         System.out.println("Invalid choice");
