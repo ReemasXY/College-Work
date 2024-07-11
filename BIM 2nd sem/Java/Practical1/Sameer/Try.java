@@ -1,24 +1,25 @@
-import java.util.*;
-public class Try{
-    public static void main(String[] args)
-    {
-        Scanner sc= new Scanner(System.in);
-        int num= sc.nextInt();
-        sc.close();
-        int cpy=num;
-        int count=1;
-        while(cpy!=0)
+import java.util.Scanner;
+
+public class Try {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int arr[] = { 1, 2, 3, 4, 5 };
+        for (int i = 0; i < arr.length; i++)
+
         {
-            cpy/=10;
-            count*=10;
+            Boolean prime = true;
+            for (int j = 2; j < arr[i]; j++)
+
+            {
+                if (arr[i] % j == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+            if (prime) {
+                System.out.println(arr[i]);
+            }
         }
-        count/=10;
-        System.out.println(count);
-while (num!=0) {
-    int quo= num/count;
-    System.out.println(quo);
-    num%=count;
-    count/=10;
-}
     }
 }
