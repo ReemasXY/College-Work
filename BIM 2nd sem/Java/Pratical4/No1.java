@@ -1,7 +1,4 @@
 // 1.	Create a class Student having data member roll (int), name (string), address (string), gender (string), faculty (string) and method setData() to set the value of data member and display method that display the data of student. Now create two object of Student and invoke set and display method.
-
-import java.util.*;
-
 class Student {
     private int roll;
     private String name, gender, address, faculty;// all private instance variable

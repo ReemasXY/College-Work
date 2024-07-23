@@ -8,13 +8,13 @@ class Shape {
         this.height = 0;
     }
 
-    public Shape(int lenght, int breadth) {
-        this.length = lenght;
+    public Shape(int length, int breadth) {
+        this.length = length;
         this.breadth = breadth;
     }
 
-    public Shape(int lenght, int breadth, int height) {
-        this.length = lenght;
+    public Shape(int length, int breadth, int height) {
+        this.length = length;
         this.breadth = breadth;
         this.height = height;
     }
