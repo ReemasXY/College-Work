@@ -3,23 +3,17 @@ import java.util.Scanner;
 public class Try {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int arr[] = { 1, 2, 3, 4, 5 };
-        for (int i = 0; i < arr.length; i++)
+        String a = "SAmeer";
+        a = "Teemas";
+        System.out.println(a);
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.append(" World"); // Modifies the existing object
+        System.out.println(sb);
+        boolean isEqual = a.equals("Teemas"); // isEqual = true
+        System.out.println(isEqual);
+        String str = "Sameer";
+        String replaced = str.replace('e', 'a'); // replaced = "Hallo"
+        System.out.println(replaced);
 
-        {
-            Boolean prime = true;
-            for (int j = 2; j < arr[i]; j++)
-
-            {
-                if (arr[i] % j == 0) {
-                    prime = false;
-                    break;
-                }
-            }
-            if (prime) {
-                System.out.println(arr[i]);
-            }
-        }
     }
 }
