@@ -19,6 +19,43 @@ class ExamDept {
     }
 }
 
-public class No8 {
+class Result extends ExamDept {
+    int m1, m2, m3, m4, m5;
 
+    public void setMarks(int m1, int m2, int m3, int m4, int m5) {
+        this.m1 = m1;
+        this.m2 = m2;
+        this.m3 = m3;
+        this.m4 = m4;
+        this.m5 = m5;
+    }
+
+    public void calcPercentage() {
+        int total = m1 + m2 + m3 + m4 + m5;
+        double per = ((double) total / 500) * 100;
+        String div = "";
+        if (per > 80) {
+            div = "Distinction";
+        } else if (per > 60) {
+            div = "Excellent";
+        } else if (per > 40) {
+            div = "Good";
+        } else {
+            div = "fail";
+        }
+        System.out.println("Total Marks= " + total);
+        System.out.println("Percentage=" + per);
+        System.out.println("Division=" + div);
+    }
+
+}
+
+public class No8 {
+    public static void main(String[] args) {
+        Result r1 = new Result();
+        r1.setData(1, "Sameer", "KTM", "Mgmt");
+        r1.setMarks(90, 80, 90, 80, 90);
+        r1.display();
+        r1.calcPercentage();
+    }
 }
