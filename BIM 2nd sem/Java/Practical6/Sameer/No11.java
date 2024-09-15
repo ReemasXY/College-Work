@@ -1,9 +1,7 @@
 class BankAccount {
     int accNo;
     String name, address, phone, gender;
-
-    int ty;
-
+    
     public BankAccount(int accNo, String name, String address, String phone, String gender) {
         this.accNo = accNo;
         this.name = name;
