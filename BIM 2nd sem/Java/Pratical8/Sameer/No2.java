@@ -13,7 +13,7 @@ class Rectangle<T, U> {
         // generic T and U ma non numeric data ni auna sakxa soo to multiply or peform
         // arithmetic operation yo numberic value nai ho ensure garna parxa natra error
         // auxa
-        System.out.println((int) this.length * (double) this.breadth);
+        System.out.println("Area is" +(int) this.length * (double) this.breadth);
     }
 }
 

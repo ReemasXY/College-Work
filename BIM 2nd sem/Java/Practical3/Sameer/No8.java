@@ -9,5 +9,14 @@ public class No8 {
             }
             System.out.println("");
         }
+        for(int []x: jaggedArr)
+        {
+            for (int y: x)
+            {
+                System.out.print(y);
+            }
+            System.out.println("");
+
+        }
     }
 }
