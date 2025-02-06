@@ -1,2 +1,6 @@
 *.class
 *.exe
+/BIM_3rd_sem/DSA/LinkedList/nbproject/private/
+/BIM_3rd_sem/DSA/LinkedList/build/
+/BIM_3rd_sem/DSA/List/nbproject/private/
+/BIM_3rd_sem/DSA/List/build/
