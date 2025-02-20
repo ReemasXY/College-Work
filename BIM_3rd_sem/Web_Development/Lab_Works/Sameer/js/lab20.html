@@ -1,0 +1,20 @@
+<!-- . write a JavaScript Program to find the largest number among three numbers. -->
+
+<html>
+  <head>
+    <title>lab20</title>
+  </head>
+
+  <script>
+    const a = parseInt(prompt("Enter a  number"));
+    const b = parseInt(prompt("Enter a  number"));
+    const c = parseInt(prompt("Enter a  number"));
+    let great = a;
+    if (b > a && b > c) {
+      great = b;
+    } else if (c > a && c > b) {
+      great = c;
+    }
+    document.write("The greatest is " + great);
+  </script>
+</html>

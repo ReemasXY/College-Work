@@ -1,0 +1,15 @@
+<!-- Calculate the area of tringle when all sides are known. [s=(a+b+c)/2] and [area = -->
+<!-- square root (s*(s-a)*(s-b)*(s-c))] -->
+<html>
+  <head>
+    <title>lab18</title>
+  </head>
+  <script>
+    const a = 3;
+    const b = 4;
+    const c = 5;
+    const s = (a + b + c) / 2;
+    const area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    document.write("The area of triangle is " + area);
+  </script>
+</html>
