@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 9, 9);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+color: white;
+font-size: 1.1rem;
+}
+.items{
+    display: flex;
+    gap: 20px;
+}
+.items li{
+    list-style-type: none;
+}
+.content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.3rem;
+    white-space: nowrap;
+    transform: translate(-50%,-50%);
+}

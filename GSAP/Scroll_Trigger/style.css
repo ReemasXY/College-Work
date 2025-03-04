@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html is also necessary as body ko matra afnai height width xaina so parent ko ni chaixa ani ultimate parent html ho ani html le vh ra vw linxa */
+html,body{ 
+    height: 100%;
+    width: 100%;
+}
+
+.page1 , .page2{
+height: 100%;
+width: 100%;
+background-color: aquamarine;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+
+.page2{
+    background-color: antiquewhite;
+}
