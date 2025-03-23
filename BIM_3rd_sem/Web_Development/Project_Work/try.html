@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview</title>
+</head>
+<body>
+
+    <input type="file" id="imageInput" accept="image/*">
+    <br><br>
+    <img id="preview" src="" alt="Image Preview" style="max-width: 300px; display: none;">
+
+    <script>
+        document.getElementById("imageInput").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.getElementById("preview");
+                    img.src = e.target.result;
+                    img.style.display = "block"; // Show the image after selection
+                };
+                reader.readAsDataURL(file); // Read file as a data URL
+            }
+        });
+    </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom File Input</title>
+    <style>
+        /* Hide the default file input */
+        #fileInput {
+            display: none;
+        }
+
+        /* Custom file input label */
+        .custom-file-label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        /* Style the image */
+        .custom-file-label img {
+            width: 100px; /* Adjust size */
+            height: 100px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- File Input -->
+    <input type="file" id="fileInput" accept="image/*">
+
+    <!-- Custom Label with Image -->
+    <label for="fileInput" class="custom-file-label">
+        <img id="preview" src="https://via.placeholder.com/100" alt="Upload Image">
+    </label>
+
+    <script>
+        document.getElementById("fileInput").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById("preview").src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+</body>
+</html>

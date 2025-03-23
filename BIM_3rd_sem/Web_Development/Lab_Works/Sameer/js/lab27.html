@@ -1,0 +1,54 @@
+<!-- . Write a Program to validate a form having Name, Phone Number, 
+Email and Address. -->
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lab 27</title>
+    </head>
+
+    <body>
+        <form name="myform" action=""
+            onsubmit="return validate();">
+            Email: <input type="text" name="email"><br />
+            Name: <input type="text" name="name"><br />
+            Contact: <input type="text" name="contact"><br />
+            Address: <input type="text" name="address"><br />
+
+            <input type="submit" value="register">
+        </form>
+    </body>
+
+
+    <script>
+        function validate() {
+            var x = document.myform.email.value;
+            let name = document.myform.name.value;
+            let contact = document.myform.contact.value;
+            let address = document.myform.address.value;
+            console.log(address.length);
+            var atposition = x.indexOf("@");
+            var dotposition = x.lastIndexOf(".");
+
+            if (name.length < 6) {
+                alert("Name should be at least 6 characters ");
+                return false;
+            }
+            if (contact.length != 10 || isNaN(contact)) {
+                alert("Invalid contact ");
+                return false;
+            }
+            if (address.length<=0) {
+                alert("Address can't be empty");
+                return false;
+            }
+
+            if (atposition < 1 || dotposition < atposition + 2 ||
+                dotposition + 2 >= x.length) {
+                alert("Please enter a valid e-mail address");
+                return false;
+            }
+        } 
+    </script>
+
+    </html>
