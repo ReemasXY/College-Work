@@ -58,7 +58,6 @@
             <h3>Sameer Maharjan</h3>
             <img src="./resources/img/verified.png" alt="" class="verify" />
           </span>
-
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -96,12 +95,12 @@
         <aside class="allinfo">
           <div class="userinfo">
             <label for="input" class="label">Name</label>
-            <input type="text" name="" id="input" autocomplete="off" placeholder="Enter Your Full Name" required minlength="6">
+            <input type="text" name="" id="name" autocomplete="off" placeholder="Enter Your Full Name" required minlength="6">
 
           </div>
           <div class="srate">
             <span><p>Rate Us:</p> </span>
-            <select name="rating" id="">
+            <select name="rating" id="selectRate">
               <option value="1">
                 ⭐ </option>
               <option value="2">
@@ -121,7 +120,7 @@
       </div>
       <div class="thought">
         <p>Share your thought: </p>
-        <textarea name="" id="" rows="8" required minlength="50"></textarea>
+        <textarea name="" id="review" rows="8" required  maxlength="250"></textarea>
       </div>
       <div class="btns">
         <input type="submit" id="submit" value="Submit"> 

@@ -51,6 +51,8 @@ row-gap: 20px;
 transition: transform 0.2s ease-in;
 cursor: pointer;
 max-width: 348px;
+width: 348px;
+height: 348px;
 }
 .image {
     display: flex;
@@ -73,13 +75,15 @@ span{
     font-weight: 600;
    
 }
- i{
+ i:not(.follow i){
     color: rgb(225, 225, 22);
 }
 .text
 {
     font-size: 12px;
     text-align: justify;
+    word-wrap: break-word;
+    height: 108px;
 }
 
 .date{
