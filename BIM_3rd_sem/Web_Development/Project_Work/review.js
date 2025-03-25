@@ -31,7 +31,8 @@ let undo = (e) => {
 let ratingFuntion = (value) => {
     let RateArray = "";
     for (i = 0; i < value; i++) {
-        RateArray += `<i class="fa-solid fa-star" style="margin-left: 4px;"> </i>`;
+        RateArray += `<img class="star" 
+src="./resources/img/star-solid.svg" alt="">  `;
     }
     return RateArray;
 }

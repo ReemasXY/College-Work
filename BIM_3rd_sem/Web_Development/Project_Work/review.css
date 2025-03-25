@@ -53,6 +53,7 @@ cursor: pointer;
 max-width: 348px;
 width: 348px;
 height: 348px;
+max-height: 348px;
 }
 .image {
     display: flex;
@@ -69,6 +70,7 @@ span{
     display: flex;
     align-items: center;
     column-gap: 5px;
+    margin-bottom: 5px;
 }
 .rating h3{
 
@@ -260,4 +262,11 @@ textarea{
 #cancel:hover {
     background-color: #444444; /* Slightly darker gray */
   
+}
+.star{
+    height: 20px !important;
+    width: 20px !important;
+}
+.adjust{
+    margin-top: -10px;
 }
