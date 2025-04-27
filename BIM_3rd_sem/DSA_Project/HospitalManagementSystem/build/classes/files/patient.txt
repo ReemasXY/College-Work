@@ -1,0 +1,3 @@
+102;Akash Gupta;9841540119;Male;Urgent;1500;Yes;101
+103;Nihal Sharma;9841462103;Male;Critical;1500;Yes;102
+104;Sita Magar;9841540119;Female;Critical;1500;No;NULL

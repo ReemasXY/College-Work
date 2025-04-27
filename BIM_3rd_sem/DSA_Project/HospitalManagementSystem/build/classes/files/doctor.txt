@@ -1,0 +1,4 @@
+101;Kritam Shakya;Kathamandu;9841250250;11000;Appointed
+102;Akash Pandey;Kathamandu;9841778437;12000;Free
+103;Priti Shrestha;Kathamandu;9810223566;15000;Free
+104;Hari Pandey;Butwal;9841540119;15000;Free
